@@ -233,7 +233,7 @@ nav.show ul.grid {
 
 /* toggle menu */
 .toggle {
-  color: var(--base-color);
+  color: var(--text-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
