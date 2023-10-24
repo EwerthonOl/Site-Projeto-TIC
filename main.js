@@ -69,6 +69,7 @@ scrollReveal.reveal(
 /* Botão voltar para o topo */
 const backToTopButton = document.querySelector('.back-to-top')
 
+// Function to show/hide back-to-top button
 function backToTop() {
   if (window.scrollY >= 560) {
     backToTopButton.classList.add('show')
@@ -101,6 +102,25 @@ function activateMenuAtCurrentSection() {
     }
   }
 }
+
+// Função para mudar o atributo src da imagem
+function changeImageSrc() {
+  // Seleciona a imagem pelo ID
+  var image = document.getElementById('imgBanner');
+
+  // Verifica se a largura da janela é menor ou igual a 768px
+  if (window.innerWidth <= 768) {
+    // Muda o atributo src da imagem para a imagem de menor resolução
+    image.src = 'images/bannerCell.png';
+  } else {
+    // Muda o atributo src da imagem para a imagem de maior resolução
+    image.src = 'images/bannerPC.png';
+  }
+}
+
+// Adiciona um evento de escuta para a mudança do tamanho da janela
+window.addEventListener('resize', changeImageSrc);
+window.addEventListener('load', changeImageSrc);
 
 /* When Scroll */
 window.addEventListener('scroll', function () {
