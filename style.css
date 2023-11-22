@@ -413,10 +413,37 @@ nav.show div.icon-close {
   margin-right: 0.5rem;
 }
 
+#testimonials .testimonials .testimonial .fonteDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+#testimonials .testimonials .testimonial .fonteDiv .buttonFontes{
+  background-color: var(--text-color);
+  color: var(--title-color);
+
+  height: 2rem;
+  max-width: 7rem;
+
+  align-self: flex-end;
+
+  padding: 0 .8rem;
+  margin-top: 1rem;
+
+  font: 600 1rem var(--body-font);
+}
+
+#testimonials .testimonials .testimonial .fonteDiv .buttonFontes:hover{
+  background: var(--base-color-alt);
+  color: var(--text-color-light);
+}
+
 /* swiper */
 .swiper-slide {
   height: auto;
   padding: 4rem 1rem;
+
+  cursor: grab;
 }
 
 .swiper-pagination-bullet {
@@ -496,8 +523,8 @@ footer .social a:hover {
 
 /* Back to top */
 .back-to-top {
-  background: var(--base-color);
-  color: var(--text-color-light);
+  background: var(--text-color-light);
+  color: var(--base-color-alt);
 
   position: fixed;
   right: 1rem;
