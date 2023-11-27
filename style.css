@@ -651,7 +651,7 @@ footer .social a:hover {
   }
 
   nav .menu ul li a.title {
-    font: 400 1rem var(--body-font);
+    font: 600 1rem var(--body-font);
     -webkit-font-smoothing: antialiased;
   }
 
