@@ -360,7 +360,7 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
-/*====  TESTIMONIALS ============================ */
+/*====  TESTIMONIALS NOTICIAS ============================ */
 #testimonials {
   background: var(--base-color);
 }
@@ -421,6 +421,7 @@ nav.show div.icon-close {
 #testimonials .testimonials .testimonial .fonteDiv .buttonFontes{
   background-color: var(--text-color);
   color: var(--title-color);
+  box-shadow: 5px 5px 15px var(--body-color);
 
   height: 2rem;
   max-width: 7rem;
@@ -437,6 +438,12 @@ nav.show div.icon-close {
   background: var(--base-color-alt);
   color: var(--text-color-light);
 }
+
+.noticiaDiv {
+  padding-top: 1rem;
+}
+
+
 
 /* swiper */
 .swiper-slide {
@@ -624,6 +631,10 @@ footer .social a:hover {
 
   .section {
     padding: 10rem 0;
+  }
+
+  .section.noticiaSection{
+    padding: 2rem 0;
   }
 
   .section header,
